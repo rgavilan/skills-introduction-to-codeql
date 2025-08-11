@@ -6,3 +6,5 @@ obj = pickle.loads(data)  # Vulnerabilidad: deserialización no segura
 
 user_input = "print('hola')"
 eval(user_input)  # Vulnerabilidad: permite ejecución arbitraria
+
+DB_PASSWORD = "SuperSecret123"  # Vulnerabilidad: Hardcoded credentials
